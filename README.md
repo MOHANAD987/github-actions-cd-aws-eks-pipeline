@@ -1,5 +1,3 @@
-
-````markdown
 # 🚀 CI/CD Pipeline using GitHub Actions, Docker & AWS EKS
 
 <p align="center">
@@ -13,7 +11,9 @@
 
 </p>
 
+
 ---
+
 
 ## 📌 Project Description
 
@@ -24,7 +24,9 @@ This project demonstrates how to build a **complete CI/CD pipeline** using **Git
 - 📦 Pushing the image to Docker Hub  
 - ☸️ Deploying the application to Kubernetes (AWS EKS)  
 
+
 ---
+
 
 ## ⭐ Project Value
 
@@ -35,7 +37,9 @@ This project reflects the practical implementation of modern DevOps concepts and
 - Integration between GitHub, Docker, and AWS  
 - Production-ready deployment practices  
 
+
 ---
+
 
 ## 🎯 Project Objectives
 
@@ -44,7 +48,9 @@ This project reflects the practical implementation of modern DevOps concepts and
 - Deploy applications on Kubernetes  
 - Gain hands-on experience in DevOps and Cloud  
 
+
 ---
+
 
 ## ⚙️ How the Pipeline Works
 
@@ -60,13 +66,16 @@ When code is pushed to the `main` branch, the workflow runs automatically:
 6. ☸️ Connect to EKS cluster  
 7. 🚀 Deploy the application to Kubernetes  
 
+
 ---
+
 
 
 ## ⚡ Workflow File
 
 📍 Path:
 .github/workflows/cd.yml
+
 
 ```yaml
 name: cd workflow
@@ -113,7 +122,9 @@ jobs:
         run: kubectl apply -f ./k8s/deployment.yaml
 ```
 
+
 ---
+
 
 ## 🛠️ Technologies Used
 
@@ -124,7 +135,9 @@ jobs:
 - Java  
 - Maven  
 
+
 ---
+
 
 ## 🚀 Quick Start
 
@@ -135,7 +148,9 @@ git clone https://github.com/MOHANAD987/github-actions-cd-aws-eks-pipeline.git
 cd github-actions-cd-aws-eks-pipeline
 ````
 
+
 ---
+
 
 ### 2️⃣ Run the Application Locally
 
@@ -143,7 +158,9 @@ cd github-actions-cd-aws-eks-pipeline
 mvn clean package
 ```
 
+
 ---
+
 
 ### 3️⃣ Trigger the Pipeline
 
@@ -153,7 +170,9 @@ git commit -m "trigger pipeline"
 git push origin main
 ```
 
+
 ---
+
 
 ## 🐳 Docker Image
 
@@ -161,15 +180,19 @@ git push origin main
 ${{ secrets.DOCKERHUB_USERNAME }}/java-app:latest
 ```
 
+
 ---
 
+
 ## ☸️ Kubernetes Commands
+
 
 ### Deploy the Application
 
 ```bash
 kubectl apply -f ./k8s/deployment.yaml
 ```
+
 
 ### Verify Deployment
 
@@ -179,7 +202,9 @@ kubectl get deployments
 kubectl get nodes
 ```
 
+
 ---
+
 
 ## 📂 Project Structure
 
@@ -200,18 +225,27 @@ project/
 │   └── architecture.png
 ```
 
+
+
 ---
+
+
 
 ## 📸 Screenshots
 
 🔗 [Open Screenshots Folder](./screenshots/)
+
+
 ---
+
 
 ## 📊 System Architecture Diagrams
 
 🔗 [Open Diagrams Folder](./diagrams/)
 
+
 ---
+
 
 ## ❗ Common Issues
 
@@ -220,6 +254,7 @@ project/
 ```bash
 User is forbidden
 ```
+
 
 ✔ Solution:
 
@@ -230,7 +265,9 @@ User is forbidden
 AmazonEKSClusterAdminPolicy
 ```
 
+
 ---
+
 
 ### 🔴 Authentication Error
 
@@ -238,7 +275,9 @@ AmazonEKSClusterAdminPolicy
 aws eks update-kubeconfig --region us-east-1 --name <cluster-name>
 ```
 
+
 ---
+
 
 ## 📚 What I Learned
 
@@ -248,7 +287,9 @@ aws eks update-kubeconfig --region us-east-1 --name <cluster-name>
 * Working with AWS EKS
 * Automating the full application lifecycle
 
+
 ---
+
 
 ## 📈 Future Improvements
 
@@ -257,20 +298,26 @@ aws eks update-kubeconfig --region us-east-1 --name <cluster-name>
 * Implement monitoring (Prometheus + Grafana)
 * Apply Blue/Green deployment strategy
 
+
 ---
+
 
 ## 👨‍💻 Developer
 
 Mohannad Faisal
 DevOps & Cloud Engineer
 
+
 ---
+
 
 ## 📄 License
 
 This project is licensed under the MIT License.
 
+
 ---
+
 
 ## ⭐ Support the Project
 
